@@ -1,27 +1,27 @@
 <template>
-  <category-listing-layout
-    type="brand"
-  />
+  <category-listing-layout type="brand" />
 </template>
 <script setup>
+import { useCommonStore } from "~/store/common";
+import { useMetaData } from "../composables/useMetaData";
 
-  import {useCommonStore} from "~/store/common";
-  import {useMetaData} from "../composables/useMetaData";
-  
-  definePageMeta({
-    middleware: ['common-middleware'],
-    layout: 'default',
-  });
+definePageMeta({
+  middleware: ["common-middleware"],
+  layout: "default",
+});
 
-  const commonStore = useCommonStore();
-  const {customScripts, site_setting} = storeToRefs(commonStore);
+const commonStore = useCommonStore();
+const { customScripts, site_setting } = storeToRefs(commonStore);
 
-  const {t} = useI18n();
-  const {pageMeta} = useMetaData();
+const { t } = useI18n();
+const { pageMeta } = useMetaData();
 
-  useHead(pageMeta({
+useHead(
+  pageMeta({
     ...site_setting.value,
-    ...{meta_title: `${t('header.brands')} | ${site_setting.value.meta_title}`}
-  }));
-
+    ...{
+      meta_title: `${t("header.brands")} | ${site_setting.value.meta_title}`,
+    },
+  }),
+);
 </script>
