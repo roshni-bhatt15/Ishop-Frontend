@@ -6,37 +6,38 @@ console.log("API BASE:", apiBase);
 apiBase += configJson.api.url;
 
 export default defineNuxtConfig({
+  ssr: true,
   nitro: {
     preset: "vercel",
-    routeRules: {
-      "/robots.txt": { prerender: false },
-      "/sitemap.xml": { prerender: false },
-    },
-    handlers: [
-      {
-        route: "/robots.txt",
-        handler: "~/server/routes/robots.txt.js",
-      },
-      {
-        route: "/sitemap.xml",
-        handler: "~/server/routes/sitemap.xml.js",
-      },
-    ],
+    // routeRules: {
+    //   "/robots.txt": { prerender: false },
+    //   "/sitemap.xml": { prerender: false },
+    // },
+    // handlers: [
+    //   {
+    //     route: "/robots.txt",
+    //     handler: "~/server/routes/robots.txt.js",
+    //   },
+    //   {
+    //     route: "/sitemap.xml",
+    //     handler: "~/server/routes/sitemap.xml.js",
+    //   },
+    // ],
   },
-  vite: {
-    server: {
-      hmr: {
-        overlay: false,
-      },
-      watch: {
-        usePolling: false,
-        ignored: ["**/node_modules/**", "**/.git/**"],
-      },
-      fs: {
-        strict: true,
-      },
-    },
-  },
+  // vite: {
+  //   server: {
+  //     hmr: {
+  //       overlay: false,
+  //     },
+  //     watch: {
+  //       usePolling: false,
+  //       ignored: ["**/node_modules/**", "**/.git/**"],
+  //     },
+  //     fs: {
+  //       strict: true,
+  //     },
+  //   },
+  // },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
 
