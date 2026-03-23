@@ -1,0 +1,4 @@
+const error_vue_vue_type_style_index_0_scoped_e014ef42_lang = ".big-title[data-v-e014ef42]{font-size:6em;font-weight:300}.error-wrapper[data-v-e014ef42]{min-height:400px}.error-wrapper .img-wrap[data-v-e014ef42]{max-width:350px}@media only screen and (max-width:768px){.big-title[data-v-e014ef42]{font-size:4em}}@media only screen and (max-width:576px){.error-wrapper[data-v-e014ef42]{display:block;min-height:0;text-align:center}}";
+
+export { error_vue_vue_type_style_index_0_scoped_e014ef42_lang as e };
+//# sourceMappingURL=entry-styles-2.mjs-BVwCEbCw.mjs.map
