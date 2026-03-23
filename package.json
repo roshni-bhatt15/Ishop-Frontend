@@ -22,6 +22,7 @@
     "nuxt": "^3.17.4",
     "pinia": "^3.0.2",
     "vue": "latest",
+    "vue-bundle-renderer": "^2.2.0",
     "vue-cryptojs": "^2.4.7",
     "vue-dompurify-html": "^5.2.0",
     "vue-router": "latest",
