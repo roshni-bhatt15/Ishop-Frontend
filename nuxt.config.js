@@ -8,7 +8,7 @@ apiBase += configJson.api.url;
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: "vercel",
+    preset: "static",
     // routeRules: {
     //   "/robots.txt": { prerender: false },
     //   "/sitemap.xml": { prerender: false },
