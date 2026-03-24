@@ -6,7 +6,7 @@ console.log("API BASE:", apiBase);
 apiBase += configJson.api.url;
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: "vercel",
     // routeRules: {
