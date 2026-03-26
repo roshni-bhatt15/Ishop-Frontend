@@ -6,7 +6,7 @@ console.log("API BASE:", apiBase);
 apiBase += configJson.api.url;
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: process.env.SSR === "true",
   nitro: {
     preset: "static",
     // routeRules: {
