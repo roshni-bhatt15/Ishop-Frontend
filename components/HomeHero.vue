@@ -33,7 +33,7 @@
               <template v-slot:content>
                 <li v-for="(value, index) in slider.main" :key="index">
                   <nuxt-link
-                    :to="sourceUrl(value)"
+                    :to="utils.sourceUrl(value)"
                     class="slider-content block"
                   >
                     <div class="slider-content-inner">
@@ -65,7 +65,7 @@
         <div v-if="rightTop || rightBottom" class="right">
           <nuxt-link
             v-if="rightTop"
-            :to="sourceUrl(rightTop)"
+            :to="utils.sourceUrl(rightTop)"
             class="img-wrap block"
           >
             <img
@@ -78,7 +78,7 @@
 
           <nuxt-link
             v-if="rightBottom"
-            :to="sourceUrl(rightBottom)"
+            :to="utils.sourceUrl(rightBottom)"
             class="img-wrap block"
           >
             <img

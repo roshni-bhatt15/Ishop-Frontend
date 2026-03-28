@@ -205,7 +205,7 @@ onMounted(async () => {
   mainImg.onerror = () => {
     mainImgLoaded.value = true;
   };
-  mainImg.src = getImageURL(mainImage.value);
+  mainImg.src = utils.getImageURL(mainImage.value);
 
   /*
     productImageList.value.forEach((obj) => {

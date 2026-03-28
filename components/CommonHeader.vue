@@ -155,10 +155,10 @@
               <nuxt-link
                 v-for="(item, index) in headerLeft"
                 :key="index"
-                :to="getUrl(item)"
+                :to="utils.getUrl(item)"
               >
                 <span>
-                  {{ getTitle(item) }}
+                  {{ utils.getTitle(item) }}
                 </span>
               </nuxt-link>
             </div>
@@ -166,10 +166,10 @@
               <nuxt-link
                 v-for="(item, index) in headerRight"
                 :key="index"
-                :to="getUrl(item)"
+                :to="utils.getUrl(item)"
               >
                 <span>
-                  {{ getTitle(item) }}
+                  {{ utils.getTitle(item) }}
                 </span>
               </nuxt-link>
             </div>

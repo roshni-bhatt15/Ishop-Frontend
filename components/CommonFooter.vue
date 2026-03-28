@@ -34,7 +34,7 @@
                 {{ $t("footer.services") }}
               </h4>
               <nuxt-link
-                :to="pageLink(item)"
+                :to="utils.pageLink(item)"
                 v-for="(item, i) in services"
                 :key="i"
               >
@@ -47,7 +47,7 @@
                 {{ $t("footer.about") }}
               </h4>
               <nuxt-link
-                :to="pageLink(item)"
+                :to="utils.pageLink(item)"
                 v-for="(item, i) in about"
                 :key="i"
               >

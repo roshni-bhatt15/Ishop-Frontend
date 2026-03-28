@@ -6,9 +6,13 @@ console.log("API BASE:", apiBase);
 apiBase += configJson.api.url;
 
 export default defineNuxtConfig({
-  ssr: process.env.SSR === "true",
+  ssr: false,
   nitro: {
-    preset: "Nuxt",
+    // Static output so Vercel can serve files without server rendering.
+    preset: "static",
+    output: {
+      publicDir: "dist",
+    },
     // routeRules: {
     //   "/robots.txt": { prerender: false },
     //   "/sitemap.xml": { prerender: false },
@@ -43,9 +47,6 @@ export default defineNuxtConfig({
   // },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
-
-  // Disable server-side rendering
-  ssr: process.env.SSR === "true",
 
   modules: ["@pinia/nuxt", "@nuxtjs/i18n", "@vite-pwa/nuxt"],
 
