@@ -9,7 +9,10 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     // Static output so Vercel can serve files without server rendering.
-    preset: "static",
+    preset: "vercel",
+    externals: {
+      inline: ["vue-bundle-renderer"],
+    },
     output: {
       publicDir: "dist",
     },

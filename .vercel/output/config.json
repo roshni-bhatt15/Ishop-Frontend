@@ -1,6 +1,76 @@
 {
   "version": 3,
-  "overrides": {},
+  "overrides": {
+    "cart/index.html": {
+      "path": "cart"
+    },
+    "login/index.html": {
+      "path": "login"
+    },
+    "search/index.html": {
+      "path": "search"
+    },
+    "brands/index.html": {
+      "path": "brands"
+    },
+    "checkout/index.html": {
+      "path": "checkout"
+    },
+    "register/index.html": {
+      "path": "register"
+    },
+    "shipping/index.html": {
+      "path": "shipping"
+    },
+    "categories/index.html": {
+      "path": "categories"
+    },
+    "track-order/index.html": {
+      "path": "track-order"
+    },
+    "forgot-password/index.html": {
+      "path": "forgot-password"
+    },
+    "social-callback/index.html": {
+      "path": "social-callback"
+    },
+    "razorpay-callback/index.html": {
+      "path": "razorpay-callback"
+    },
+    "index.html": {
+      "path": ""
+    },
+    "flash-sale/index.html": {
+      "path": "flash-sale"
+    },
+    "seller/sign-up/index.html": {
+      "path": "seller/sign-up"
+    },
+    "user/orders/index.html": {
+      "path": "user/orders"
+    },
+    "user/vouchers/index.html": {
+      "path": "user/vouchers"
+    },
+    "user/addresses/index.html": {
+      "path": "user/addresses"
+    },
+    "user/following/index.html": {
+      "path": "user/following"
+    },
+    "user/wishlists/index.html": {
+      "path": "user/wishlists"
+    },
+    "seller/register/index.html": {
+      "path": "seller/register"
+    },
+    "user/compared/index.html": {
+      "path": "user/compared"
+    },
+    "user/profile/index.html": {
+      "path": "user/profile"
+    }
+  },
   "routes": [
     {
       "headers": {
@@ -43,14 +113,6 @@
     },
     {
       "handle": "filesystem"
-    },
-    {
-      "src": "/__nuxt_error",
-      "dest": "/__nitro"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/__nitro"
     }
   ]
 }

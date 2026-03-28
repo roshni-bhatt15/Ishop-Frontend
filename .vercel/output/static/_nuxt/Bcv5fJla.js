@@ -1,1 +1,0 @@
-import{R as r}from"./DQehVUnK.js";const t=()=>({orderedList:[],ordered:{}}),d={updateOrderData(e){this.ordered={...this.ordered,...e}},setOrderList(e){this.orderedList=e}},s=r("order",{state:t,actions:d});export{s as u};
